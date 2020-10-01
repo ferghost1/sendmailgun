@@ -82,6 +82,14 @@
                 <input type="hidden" name="_token" value="<?php echo csrf_token();?>">
                 <button>Send mail</button>
             </form>
+            <div style="margin-top: 20px">
+                Use these tag in your template html
+                <p>#*t_company_name*#</p>
+<p>#*tel_no*#</p>
+<p>#*t_email*#</p>
+<p>#*t_event_desc*#</p>
+<p>#*t_country*#</p>
+            </div>
         </div>
     </body>
 </html>
