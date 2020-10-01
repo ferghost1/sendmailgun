@@ -72,6 +72,13 @@
                 <label> From 
                     <input type="text" name="from">
                 </label>
+                <label> Template
+                    <select name="template_name">
+                        <?php foreach($files as $file) {?>
+                            <option value="<?php echo $file;?>"> <?php echo $file;?> </option>
+                        <?php } ?>
+                    </select>
+                </label>
                 <input type="hidden" name="_token" value="<?php echo csrf_token();?>">
                 <button>Send mail</button>
             </form>
