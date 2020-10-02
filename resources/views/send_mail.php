@@ -79,6 +79,13 @@
                         <?php } ?>
                     </select>
                 </label>
+                <div>Select attachments
+                    <select name="attachments[]" multiple>
+                        <?php foreach($attachments as $attach) {?>
+                            <option value="<?php echo $attach;?>"> <?php echo $attach;?> </option>
+                        <?php } ?>
+                    </select>
+                </div>
                 <input type="hidden" name="_token" value="<?php echo csrf_token();?>">
                 <button>Send mail</button>
             </form>
